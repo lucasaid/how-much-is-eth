@@ -5,8 +5,9 @@ function checkSomeSweetEth() {
     var total = data.price.aud;
     $(".totesTotal").text('$' + parseFloat(total, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString());
   });
-
-  $.ajax( "https://api.giphy.com/v1/gifs/random?tag=money&rating=pg-13&api_key=dc6zaTOxFJmzC" )
+  var randTag = Math.floor((Math.random() * 3));
+  var tags = ["money","swag","rich"]
+  $.ajax( "https://api.giphy.com/v1/gifs/random?tag="+tags[randTag]+"&rating=pg-13&api_key=dc6zaTOxFJmzC" )
   .done(function(data) {
     $(".totesEth").css('backgroundImage',"url('"+data.data.image_url+"')")
   });
