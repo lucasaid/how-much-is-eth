@@ -18,6 +18,9 @@ body {
 }
 .totesEth img {
   height: 30vh;
+  -webkit-filter: drop-shadow(0 12px 17px white);
+
+	filter: drop-shadow(0 0 17px white);
 }
 .totesTotal {
   position: relative;
