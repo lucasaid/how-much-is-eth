@@ -7,6 +7,7 @@ function checkSomeSweetEth() {
   });
   var randTag = Math.floor((Math.random() * 4));
   var tags = ["money","swag","rich","lambo"]
+  console.log(tags[randTag]);
   $.ajax( "https://api.giphy.com/v1/gifs/random?tag="+tags[randTag]+"&rating=pg-13&api_key=dc6zaTOxFJmzC" )
   .done(function(data) {
     $(".totesEth").css('backgroundImage',"url('"+data.data.image_url+"')")
