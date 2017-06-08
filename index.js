@@ -14,7 +14,5 @@ function checkSomeSweetEth() {
 }
 $(document).ready(function () {
   checkSomeSweetEth();
-  var timer = setTimeout( function() {
-    checkSomeSweetEth();
-  }, 300000)
+  var timer = setInterval(checkSomeSweetEth(), 300000)
 });
