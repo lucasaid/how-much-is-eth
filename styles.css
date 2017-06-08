@@ -13,6 +13,7 @@ body {
   background-size: cover;
   position: relative;
   font-weight: bold;
+  text-align: center;
 }
 .totesTotal {
   position: relative;
