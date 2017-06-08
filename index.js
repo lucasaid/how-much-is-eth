@@ -6,7 +6,7 @@ function checkSomeSweetEth() {
     $(".totesTotal").text('$' + parseFloat(total, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + " AUD");
   });
 
-  $.ajax( "http://api.giphy.com/v1/gifs/random?tag=money&rating=pg-13&api_key=dc6zaTOxFJmzC" )
+  $.ajax( "https://api.giphy.com/v1/gifs/random?tag=money&rating=pg-13&api_key=dc6zaTOxFJmzC" )
   .done(function(data) {
     $(".totesEth").css('backgroundImage',"url('"+data.data.image_url+"')")
   });
